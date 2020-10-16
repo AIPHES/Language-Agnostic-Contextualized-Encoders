@@ -33,7 +33,7 @@ python [MODEL]_eval.py
 ```
 
 ### Ablation results on RefEval (en-fr)
-System                  | m-BERT | XLM-R 
+Modifications                  | m-BERT | XLM-R 
 ----------------------- | :------: | :----------: 
 orginal                | 38.2 |  16.8 
 norm_sapce             | 42.4 |  43.7 
