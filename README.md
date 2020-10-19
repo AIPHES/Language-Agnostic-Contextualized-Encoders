@@ -6,7 +6,7 @@ This is a library to use our multilingual representations. The details are descr
 
 
 **CURRENT VERSION:**
-* We provide the modifications to m-BERT and XLM-R, namely joint-align, space and text normalization.
+* We provide the modifications to m-BERT and XLM-R, namely joint-align, space normalization and removing word contractions (other two text normalizations will be updated in next version).
 * We provide the machine translated datasets on the RefEval and XNLI tasks.
 * The pre-trained m-BERT and XLM-R models are re-aligned on word translations corpus extracted from Europarl and JW300, both of which support 19 languages: English, German, Portuguese, Dutch, Indonesian, Italian, French, Spanish, Hungarian, Afrikaans, Malay, Tagalog, Javanese, Bengali, Marathi, Estonian, Hindi, Urdu, Finnish. 
 
