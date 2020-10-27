@@ -7,7 +7,7 @@ This is a library to use our multilingual representations. The details are descr
 
 **CURRENT VERSION:**
 * We provide the modifications to m-BERT and XLM-R, namely joint-align, space normalization and removing word contractions (other two text normalizations will be updated in next version).
-* We provide the machine translated datasets on the RefEval and XNLI tasks.
+* We provide the machine translated datasets on the RFEval and XNLI tasks.
 * The pre-trained m-BERT and XLM-R models are re-aligned on word translations corpus extracted from Europarl and JW300, both of which support 19 languages: English, German, Portuguese, Dutch, Indonesian, Italian, French, Spanish, Hungarian, Afrikaans, Malay, Tagalog, Javanese, Bengali, Marathi, Estonian, Hindi, Urdu, Finnish. 
 
 ## Dependencies
@@ -21,10 +21,10 @@ This is a library to use our multilingual representations. The details are descr
 ## Usage
 
 ### Download re-aligned models and datasets
-The models are in the [link](https://drive.google.com/drive/folders/12eQI0-6NbQ9Z3WcaT32WpdWacQAuJwcG?usp=sharing). It is tricky to use shell command to deal with the datasets in Google Drive. So, please kindly download them mannually and move them to the 'model' folder. The RefEval datasets are in the repo already. Please download XNLI datasets in the [link](https://cims.nyu.edu/~sbowman/xnli/) and move to the 'XNLI/dataset' folder.
+The models are in the [link](https://drive.google.com/drive/folders/12eQI0-6NbQ9Z3WcaT32WpdWacQAuJwcG?usp=sharing). It is tricky to use shell command to deal with the datasets in Google Drive. So, please kindly download them mannually and move them to the 'model' folder. The RFEval datasets are in the repo already. Please download XNLI datasets in the [link](https://cims.nyu.edu/~sbowman/xnli/) and move to the 'XNLI/dataset' folder.
 
 ### Running experiments
-For RefEval, we provide experiments for m-BERT and XLM-R and compare the results of three modifications in one go.
+For RFEval, we provide experiments for m-BERT and XLM-R and compare the results of three modifications in one go.
 For XNLI, you need to fine-tune the models on XNLI so as to complete the experiments. The fine-tuned models are not released in this version. 
 
 ```
@@ -32,7 +32,7 @@ cd [TASK]
 python [MODEL]_eval.py
 ```
 
-### Ablation results on RefEval (en-fr)
+### Ablation results on RFEval (en-fr)
 Modifications                  | m-BERT | XLM-R 
 ----------------------- | :------: | :----------: 
 orginal                | 38.2 |  16.8 
