@@ -32,15 +32,15 @@ cd [TASK]
 python [MODEL]_eval.py
 ```
 
-### Ablation results on RFEval (en-fr)
-Modifications                  | m-BERT | XLM-R 
+### Ablation results on RFEval 
+Modifications                  | m-BERT (fr-en)| XLM-R (fr-en) | m-BERT (de-en)| 
 ----------------------- | :------: | :----------: 
-orginal                | 38.2 |  16.8 
-norm_sapce             | 42.4 |  43.7 
-norm_text              | 42.7 |  15.0 
-align                  | 46.1 |  27.6 
-align + norm_space     | 47.6 |  47.6 
-align + norm_space + norm_text  | **52.0** | **47.7**
+orginal                | 38.2 |  16.8 |28.3
+norm_sapce             | 42.4 |  43.7 |31.8
+norm_text              | 42.7 |  15.0 |30.1
+align                  | 46.1 |  27.6 |37.0
+align + norm_space     | 47.6 |  47.6 |39.4
+align + norm_space + norm_text  | **52.0** | **47.7** | **40.8**
 
 We observe that space normalization can achieve the most consistent gains among the three modifications across encoders, tasks and languages. Also, we see the additive effects of the three are often considerable. 
 
