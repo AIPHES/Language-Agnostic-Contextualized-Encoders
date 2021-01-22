@@ -33,14 +33,14 @@ python [MODEL]_eval.py
 ```
 
 ### Ablation results on RFEval 
-Modifications                  | m-BERT (fr-en)| XLM-R (fr-en) | m-BERT (de-en)
------------------------ | :------: | :----------: | :----------: 
-orginal                | 38.2 |  16.8 | 28.3 |
-norm_sapce             | 42.4 |  43.7 | 31.8 |
-norm_text              | 42.7 |  15.0 | 30.1 |
-align                  | 46.1 |  27.6 | 37.0 |
-align + norm_space     | 47.6 |  47.6 | 39.4 |
-align + norm_space + norm_text  | **52.0** | **47.7** | **40.8**
+Modifications                  | m-BERT (fr-en)| XLM-R (fr-en) | m-BERT (de-en) | XLM-R (de-en) |
+----------------------- | :------: | :----------: | :----------: | :----------: 
+orginal                | 38.2 |  16.8 | 28.3 | 14.8 |
+norm_sapce             | 42.4 |  43.7 | 31.8 | 35.5 |
+norm_text              | 42.7 |  15.0 | 30.1 | 14.3 |
+align                  | 46.1 |  27.6 | 37.0 | 19.3 |
+align + norm_space     | 47.6 |  47.6 | 39.4 | **36.9** |
+align + norm_space + norm_text  | **52.0** | **47.7** | **40.8** | 36.8 |
 
 We observe that space normalization can achieve the most consistent gains among the three modifications across encoders, tasks and languages. Also, we see the additive effects of the three are often considerable. 
 
