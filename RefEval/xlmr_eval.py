@@ -165,7 +165,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--src", default='fr', type=str, help="source language")
 parser.add_argument("--tgt", default='en', type=str, help="target language")
 parser.add_argument("--is_align", default=True, type=bool, help="whether or not joint-alignment is enabled")
-parser.add_argument("--model_path", default='../model/xlm-roberta-base-m-cased_align_lang_18', type=str)
+parser.add_argument("--model_path", default='../model/xlm-roberta-base_align_lang_18', type=str)
 parser.add_argument("--layer", default='-1', type=int, help='in which layer embeddings are obtained')
 
 args = parser.parse_args()
@@ -179,7 +179,7 @@ else:
     model_name = args.model_path
 
 
-dataset_path = '../translation/testset_{}-{}.tsv'.format(args.src, args.tgt)
+dataset_path = 'dataset/testset_{}-{}.tsv'.format(args.src, args.tgt)
 
 model = XLMRobertaModel.from_pretrained(model_name, output_hidden_states=True)
 tokenizer = XLMRobertaTokenizer.from_pretrained(model_name, do_lower_case=False)
