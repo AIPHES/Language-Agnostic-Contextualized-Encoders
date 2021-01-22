@@ -14,6 +14,7 @@ This is a library to use our multilingual representations. The details are descr
 * Python 3.6
 * [PyTorch](http://pytorch.org/), tested with 1.3.1
 * [NumPy](http://www.numpy.org/), tested with 1.18.4
+* [spacy-udpipe](https://github.com/TakeLab/spacy-udpipe/), tested with 0.1.0
 * [Pyemd](https://github.com/wmayner/pyemd), fast earth mover distance, tested with 0.5.1
 * [Transformers](https://github.com/huggingface/transformers), tested with 2.7.0
 * [Mosestokenizer] tokenization from the Moses encoder, tested with 1.0.0
