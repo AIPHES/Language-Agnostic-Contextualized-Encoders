@@ -177,7 +177,7 @@ if not args.is_align:
 else:
     model_name = model_path
 
-dataset_path = '../translation/testset_{}-{}.tsv'.format(args.src, args.tgt)
+dataset_path = 'dataset/testset_{}-{}.tsv'.format(args.src, args.tgt)
 
 config = BertConfig.from_pretrained(model_name, output_hidden_states=True)
 tokenizer = BertTokenizer.from_pretrained(model_name, do_lower_case=False)
