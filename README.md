@@ -37,7 +37,7 @@ python [MODEL]_eval.py
 Modifications                  | m-BERT (fr-en)| XLM-R (fr-en) | m-BERT (de-en) | XLM-R (de-en) |
 ----------------------- | :------: | :----------: | :----------: | :----------: 
 orginal                | 38.2 |  16.8 | 28.3 | 14.8 |
-norm_sapce             | 42.4 |  43.7 | 31.8 | 35.5 |
+norm_space             | 42.4 |  43.7 | 31.8 | 35.5 |
 norm_text              | 42.7 |  15.0 | 30.1 | 14.3 |
 align                  | 46.1 |  27.6 | 37.0 | 19.3 |
 align + norm_space     | 47.6 |  47.6 | 39.4 | **36.9** |
