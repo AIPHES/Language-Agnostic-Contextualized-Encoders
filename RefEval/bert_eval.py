@@ -132,7 +132,7 @@ def optimal_score(layer, refs, hyps, is_norm=False, batch_size=256, device='cuda
         
         distance_matrix = batched_cdist_l2(raw, raw).cpu().numpy().astype('float64')
               
-        for i in range(batch_size):  
+        for i in range(len(batch_refs)):  
             c1 = np.zeros(raw.shape[1], dtype=np.float)
             c2 = np.zeros_like(c1)
             c1[:len(ref_idf[i])] = ref_idf[i]
